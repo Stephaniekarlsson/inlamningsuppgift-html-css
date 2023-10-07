@@ -10,14 +10,23 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --big-font: 'Merriweather', serif;
+    --p-font: 'Nunito Sans', sans-serif;
+    --bg-color: #f5f8ff;
+    --section-color: #dde5f1;
+    --dark-color: #0a1c29;
+}
+
 body {
-    background-color: #f5f8ff;
+    background-color: var(--bg-color);
+    font-family: var(--p-font);
 }
 
 /* header css  */
 header {
     background-color: #0a1c29;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     padding: 1em;
     z-index: 1;
@@ -56,7 +65,60 @@ header {
 	display: none;
 }
 
+/* main startar */
+/* sektion 1 */
+
+.banner-img {
+    width: 100%;
+    position: relative;
+}
+
+.banner-text {
+    color: var(--bg-color);
+    font-family: var(--big-font);
+    position: absolute;
+    top: 15em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0em .4em .4em rgba(0, 0, 0, 1);
+    padding: 1em;
+    }
+
+.banner-text p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 35px;
+}
+
+
+
+@media (min-width: 1048px) {
+    .banner-text p {
+        font-size: 20px;
+    }
+
+    .banner-text h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 850px) {
+ 
+    .banner-text p {
+        font-size: 14px;
+    }
+
+    .banner-text h1 {
+        font-size: 29px;
+    }
+}
+
+
 @media (max-width: 768px) {
+    /* header */
     .logo {
         margin-left: 0;
         width: 150px;
@@ -107,7 +169,32 @@ header {
         color: #efefef;
         font-weight: 500;
     }
+    /* main, sektion 1  */
+    .banner-text {
+        top: 11em;
+    }
+    
+    .banner-text p {
+        font-size: 10px;
+    }
+
+    .banner-text h1 {
+        font-size: 20px;
+    }
 }
+@media (max-width: 541px) {
+    .banner-text {
+        top: 12em;
+    }
+    .banner-text p {
+    font-size: 17px;
+    }
+
+    .banner-text h1 {
+    display: none;
+    }
+}
+
 
 @media (max-width: 420px) {
     .logo {
@@ -116,5 +203,23 @@ header {
 
     .icons {
         font-size: 3em;
+    }
+
+    .banner-text {
+        top: 10em;
+    }
+
+    .banner-text p {
+        font-size: 15px;
+        }
+}
+
+@media (max-width: 380px) {
+    .banner-text {
+        top: 9em;
+    }
+
+    .banner-text p {
+        font-size: 12px;
     }
 }
