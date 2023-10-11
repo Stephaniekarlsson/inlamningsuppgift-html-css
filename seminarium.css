@@ -24,7 +24,6 @@ body {
 main {
     position: relative;
 }
-
 /* header css  */
 header {
     background-color: var(--dark-color);
@@ -60,93 +59,64 @@ header {
 #check {
 	display: none;
 }
-
-/* main startar */
-/* banner */
-.banner-img {
-    width: 100%;
-    max-height: 75vh;
-    position: relative;
-}
-
-/* section */
-.section{
-    padding: 2em 0 0 0;
-}
-.section-img {
-    width: 50%;
-    height: auto;
-    border-radius: 1em;
-}
-.info-container h1, .info-text {
-    text-align: center;
-    padding-bottom: .6em;
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.info-container h1 {
-    font-size: 30px;
-}
-.info-text {
-    font-size: 20px;
-    margin-bottom: 2em;
-}
-.row-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 5em;
-    margin: 1em 0;
-    padding: 0;
-
-}
-.reverse {
-    flex-direction: row-reverse;
-}
-.column-section {
-    display: flex;
-    flex-direction: column;
-    font-size: 19px;
-    margin: .1em;
-    max-width: 15em;
-} 
-.column-section a {
-    background-color: var(--dark-color);
-    color: var(--bg-color);
-    width: 5em;
-    margin-top: .5em;
-    padding: .2em;
-    text-align: center;
-    border-radius: .5em;
-    
-}
-.column-section a:hover{
-    background-color: var(--bg-color);
-    border: 2px solid var(--dark-color);
-    color: var(--dark-color);
-}
-.section h3 {
-    font-size: 25px;
-    padding: .6em 0;
-    margin-top: .5em;
-    text-align: center;
-}
-.section h3, .info-container h1 {
+/* sektion */
+main h1 {
     font-family: var(--big-font);
+    text-align: center;
+    padding-top: 2em;
 }
-.totop {
+.totop-sem{
     position: fixed;
-    bottom: 4.5em;
+    bottom: .5em;
     right: 0;
     font-size: 30px;
     color: var(--bg-color);
     background-color: rgb(7,23,34,0.5);
     height: 1.4em;
     padding: .2em;
+    }
+.days {
+    font-family: var(--big-font);
+    font-size: 25px;
+    padding: .6em 0;
+    margin: 5em 0 1em 0;
+    text-align: center ;
+    box-shadow: 0px 0px 10px var(--dark-color);
+} 
+.fredag, .lördag, .söndag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3em;
+    margin-top: .5em;
+}
+.column-sem {
+    width: min-content;
+    background-color: #e9eef9;
+    padding: 4em;
+    box-shadow: 0px 3px 10px var(--dark-color);
+    border-radius: .5em;
+}
+.column-sem img {
+    width: 15vw;
+    min-width: 10em;
+    border-radius: 0.5em;
+    
+}
+.column-sem p, .column-sem h3 {
+    width: 15vw;
 }
 
+.column-sem h3 {
+    font-size: 25px;
+}
+.column-sem h4 {
+    font-size: 22px;
+}
+.column-sem p {
+    font-size: 20px;
+    margin-top: .2em;
+}
 /* footer */
 footer {
     background-color: var(--dark-color);
@@ -200,20 +170,48 @@ footer {
 .follow a {
     margin: .5em;
 }
-
 /* media queries */
-@media (max-width: 1048px) {
-    .info-container h1, .info-text {
-        max-width: 70%;
+@media (max-width: 1583px) {
+    .column-sem h3 {
+        font-size: 20px;
     }
-    .totop {
-        bottom: .5em;
+    .column-sem h4 {
+        font-size: 19px;
+    }
+    .column-sem p {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1281px) {
+    .lördag .column-sem {
+        width: 25em;
+    }
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .center p, .center h3 {
+        width: fit-content;
+    }
+    
+    
+}
+@media (max-width: 1048px) {
+    /* sektion */
+    .fredag .column-sem, .lördag .column-sem ,.söndag .column-sem {
+        width: 25em;
+    }
+    .column-sem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .column-sem p, .column-sem h3 {
+        width: fit-content;
     }
 }
 @media (max-width: 850px) {
-    .row-section {
-        gap: 1.5em;
-    }
 }
 @media (max-width: 768px) {
     /* header */
@@ -257,29 +255,25 @@ footer {
         color: #efefef;
         font-weight: 500;
     }
-   /* section */
-   .info-container h1, .info-text {
-    max-width: 100%;
-    margin: 0 1em;
-    }
-    .section-img {
-        width: 100%;
-    }
-   
 }   
 @media (max-width: 541px) {
-    .info-container h1 {
-        font-size: 23px;
+    /* sektion */
+    .fredag .column-sem, .lördag .column-sem ,.söndag .column-sem {
+        width: 21em;
     }
-    .info-text {
-        font-size: 18px;
-    }
-    .section h3 {
-        font-size: 21px;
-    }
-    .column-section {
-        font-size: 17px;
-    }
+    .column-sem h3 {
+        font-size: 16px;
+        text-align: center;
+        }
+    .column-sem h4 {
+        font-size: 16px;
+        text-align: center;
+        }
+    .column-sem p {
+        font-size: 15px;
+        text-align: center;
+        }
+    /* footer */
     .flex {
         display: block;
     }
@@ -303,4 +297,13 @@ footer {
     .icons {
         font-size: 3em;
     }
+       /* sektion */
+  .fredag .column-sem, .lördag .column-sem ,.söndag .column-sem {
+    width: 18em;
+  }
+}
+@media (max-width: 290px) {
+    .fredag .column-sem, .lördag .column-sem ,.söndag .column-sem {
+        width: 15em;
+      }
 }

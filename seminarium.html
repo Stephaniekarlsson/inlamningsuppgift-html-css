@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bättre Webb - Konferens</title>
+    <link rel="stylesheet" href="seminarium.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+			<i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+        <img class="logo" src="bilder/logo-white-new.png" alt="better webbs logga" width="170">
+        
+        <nav class="navbar">
+            <a href="index.html">Hem</a>
+            <a href="#">Seminarium</a>
+            <a href="#">Anmälan</a>
+            <a href="#">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <a class="totop-sem" href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        <section>
+            <h2 class="days">Fredag</h2>
+            <div class="fredag">
+                <div class="column-sem">
+                    <img src="bilder/seminarium/webbdesign.jpg" alt="bild föreställande webbtrender 2024">
+                    <h3>Webbdesign Trends 2024:</h3>
+                    <h4>Framtiden är här</h4>
+                    <p>Utforska de senaste webbdesigntrenderna och hur de påverkar framtidens webbplatser.</p>
+                </div>
+            
+                <div class="column-sem">
+                    <img src="bilder/seminarium/optimering.jpg" alt="bild föreställande optimering">
+                    <h3>Optimering av Prestanda:</h3>
+                    <h4>Snabbare Webbplatser</h4>
+                    <p>Lär dig tekniker och strategier för att förbättra prestanda och minska sidbelastningstider.</p>
+                </div>
+
+                <div class="column-sem">
+                    <img src="bilder/seminarium/responsive.jpg" alt="bild föreställande responsiv hemsida">
+                    <h3>Responsiv Design i Djupet:</h3>
+                    <h4>Bortom Mediaförfrågningar</h4>
+                    <p>Gå bortom grundläggande responsiv design och utforska avancerade tekniker för att skapa anpassningsbara användargränssnitt.</p>
+                </div>
+            </div>
+
+            <h2 class="days">Lördag</h2>
+            <div class="lördag">
+                <div class="column-sem center">
+                    <img src="bilder/seminarium/java.jpg" alt="bild föreställande javascript framework">
+                    <h3>JavaScript Framework Wars: </h3>
+                    <h4>Jämförelse och Kontrast</h4>
+                    <p>Jämför olika JavaScript-ramverk och få insikter om när och varför du ska använda dem.</p>
+                </div>
+
+                <div class="column-sem center">
+                    <img src="bilder/seminarium/grid.jpg" alt="bild föreställande grid">
+                    <h3>CSS Grid Mastery:</h3>
+                    <h4>Kreativ Layoutdesign</h4>
+                    <p>Utforska CSS Grid för att skapa avancerade och kreativa layouter på webbsidor.</p>
+                </div>
+
+                <div class="column-sem center">
+                    <img src="bilder/seminarium/mobilupp.jpg" alt="bild föreställande mobilanvändarupplevelse">
+                    <h3>Användar-upplevelse:</h3>
+                    <h4>Bästa Praxis och Fällor att Undvika</h4>
+                    <p>Lär dig bästa praxis för att optimera mobila användargränssnitt och undvika vanliga misstag.</p>
+                </div>
+
+                <div class="column-sem center">
+                    <img src="bilder/seminarium/ui.jpg" alt="bild föreställande återanvändbar UI">
+                    <h3>Webbkomponenter:</h3>
+                    <h4>Framtiden för Återanvändbar UI</h4>
+                    <p>Utforska webbkomponenter och hur de kan förenkla utvecklingen och underhållet av användargränssnitt.</p>
+                </div>
+            </div>
+            <h2 class="days">Söndag</h2>    
+            <div class="söndag">
+                <div class="column-sem">
+                    <img src="bilder/seminarium/tillgänglighet.jpg" alt="bild föreställande tillgänglighet">
+                    <h3>Tillgänglighet på Webben:</h3>
+                    <h4>Skapa för Alla</h4>
+                    <p>Få insikter om att skapa webbplatser som är tillgängliga för alla användare, inklusive personer med funktionsnedsättningar.
+                    </p>
+                </div>
+
+                <div class="column-sem">
+                    <img src="bilder/seminarium/verktyg.jpg" alt="bild föreställande verktyg för webben">
+                    <h3>Frontend Automation:</h3>
+                    <h4>Verktyg och Tekniker</h4>
+                    <p>Lär dig om automatiseringsverktyg och tekniker som kan förenkla och effektivisera frontend-utveckling.</p>
+                </div>
+
+                <div class="column-sem">
+                    <img src="bilder/seminarium/app.jpg" alt="bild föreställande progressiva webbutvecklingsappar">
+                    <h3>Progressiva Webbappar:</h3>
+                    <h4>Bättre än Appar?</h4>
+                    <p>Utforska fördelarna och utmaningarna med progressiva webbutvecklingsappar och deras potential att ersätta traditionella appar.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="flex">
+            <section class="footer-section">
+                <h4>Kontakt</h4>
+                <p>0156 875 78</p>
+                <p>info@battrewebb.se</p>
+                <a id="kontaktform" href="#">Kontaktformulär</a>
+            </section>
+
+            <section class="footer-section">
+                <h4>Menylänkar</h4>
+                <a href="#">Hem</a>
+                <a href="#">Seminarium</a>
+                <a href="#">Anmälan</a>
+                <a href="#">Kontakt</a>
+            </section>
+
+            <section class="footer-section">
+                <h4>Sponsorer</h4>
+                <a href="">PixelPerch</a>
+                <a href="">NetNinjas</a>
+                <a href="">VisualVerse</a> 
+            </section>
+        </div>
+
+        <div class="follow">
+            <a class="footer-icons" href=""><i class='bx bxl-facebook-square' ></i></a>
+            <a class="footer-icons" href=""><i class='bx bxl-instagram' ></i></a>
+            <a class="footer-icons" href=""><i class='bx bxl-linkedin-square' ></i></a>
+        </div>
+    </footer>
+</body>
+</html>
