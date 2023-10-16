@@ -46,7 +46,7 @@ header {
 }
 .navbar a:hover {
     color: var(--hover-color);
-    text-shadow: 0px 4px 4px var(--hover-color);
+    text-shadow: 0px 0px 4px var(--hover-color);
 }
 .icons {
     font-size: 4em;
@@ -96,6 +96,7 @@ main h1 {
     padding: 4em;
     box-shadow: 0px 3px 10px var(--dark-color);
     border-radius: .5em;
+    transition: .2s ease-in;
 }
 .column-sem img {
     width: 15vw;
@@ -118,6 +119,9 @@ main h1 {
 }
 .column-sem * {
     text-align: center;
+}
+.column-sem:hover {
+    background-color: #fffefe;
 }
 
 /* footer */
@@ -157,7 +161,7 @@ footer {
 }
 .footer-section a:hover, .follow a:hover {
     color: var(--hover-color);
-    text-shadow: 0px 4px 4px var(--hover-color);
+    text-shadow: 0px 0px 4px var(--hover-color);
 }
 .footer-section {
     display: flex;
