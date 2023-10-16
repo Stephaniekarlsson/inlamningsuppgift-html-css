@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bättre Webb - Konferens</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kontakt.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,41 +29,16 @@
     </header>
 
     <main>
-        <a class="totop" href="#"><i class='bx bx-up-arrow-alt'></i></a>
-    
-        <img class="banner-img" src="bilder/homepage/home-pic.jpg" alt="bild på ett tagentbort och kod">
-        
+        <h1>Kontakta oss!</h1>
+        <form class="form-container">
+            <input type="text" id="name" placeholder=" Förnamn & efternamn" required/>
+            <input type="text" id="email" placeholder=" E-postadress" required/>
+            <input type="text" id="number" placeholder=" Telefonnummer" required/>
 
-        <section class="section">
-            <div class="info-container">
-                <h1>Välkommen till konferens 2023!</h1>
-                <p class="info-text">Vi är glada över att bjuda in dig till vår konferens, en spännande möjlighet att fördjupa din kunskap och delta i meningsfulla diskussioner om aktuella ämnen. Konferensen äger rum i Göteborg under tre minnesvärda dagar!</p>
-            </div>
-            <div class="row-section">
-                <div class="column-section">
-                    <h3>Konferensöversikt:</h3>
-                    <ul>
-                        <li><strong>Datum:</strong> 20 oktober - 22 oktober</li>
-                        <li><strong>Plats:</strong> Göteborg</li>
-                        <li><strong> Antal seminarier:</strong> 10</li>
-                        <li><strong>Anmälan:</strong> Du har möjlighet att anmäla dig till hela konferensen <br> för en heltäckande upplevelse eller köpa dagspass för enskilda dagar, <br> beroende på din tillgänglighet och intressen.</li>
-                    </ul>
-                </div>
-                <img class="section-img" src="bilder/homepage/computer.jpg" alt="Bild på dator, block och penna">
-            </div>
-        </section>
+            <textarea id="meddelande" placeholder=" Skriv här!"></textarea>
 
-        <section class="section">
-            <div class="row-section reverse">
-                <div class="column-section">
-                    <h3>Seminarium</h3>
-                    <p>Är du en frontend-utvecklare som vill fördjupa dina kunskaper och hålla dig uppdaterad med de senaste trenderna inom webbutveckling? </p>
-                    <p> Varje evenemang erbjuder dig      insiktsfulla föreläsningar, praktiska övningar och möjligheter att nätverka med andra utvecklare.</p>
-                    <a href="seminarium.html">Läs mer</a>
-                </div>
-                <img class ="section-img" src="bilder/homepage/semm.jpg" alt="bild på en grupp människor under ett seminarie.">
-            </div>
-        </section>
+            <button type="submit">Skicka</button>
+        </form>
     </main>
 
     <footer>
@@ -80,7 +55,7 @@
                 <a href="index.html">Hem</a>
                 <a href="seminarium.html">Seminarium</a>
                 <a href="anmälan.html">Anmälan</a>
-                <a href="kontakt.html">Kontakt</a>
+                <a href="#">Kontakt</a>
             </section>
 
             <section class="footer-section">

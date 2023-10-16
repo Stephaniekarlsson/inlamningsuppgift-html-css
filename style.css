@@ -48,6 +48,7 @@ header {
 .navbar a:hover {
     color: var(--hover-color);
     text-shadow: 0px 4px 4px var(--hover-color);
+    transition: all .3s ease-in;
 }
 .icons {
     font-size: 4em;
@@ -124,8 +125,9 @@ header {
 }
 .column-section a:hover{
     background-color: var(--bg-color);
-    border: 2px solid var(--dark-color);
+    border: 1px solid var(--dark-color);
     color: var(--dark-color);
+    transition: all .3s ease-in;
 }
 .section h3 {
     font-size: 25px;
@@ -178,6 +180,7 @@ footer {
     border: 2px solid rgb(144, 153, 167);
     color: rgb(144, 153, 167);
     text-shadow: none;
+    transition: all .3s ease-in;
 }
 .footer-section a, .follow a {
     color: rgb(144, 153, 167);
@@ -259,11 +262,13 @@ footer {
     }
    /* section */
    .info-container h1, .info-text {
-    max-width: 100%;
-    margin: 0 1em;
+        max-width: 100%;
+        margin: 0 1em;
     }
     .section-img {
-        width: 100%;
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
     }
    
 }   

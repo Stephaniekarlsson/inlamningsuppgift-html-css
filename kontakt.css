@@ -21,9 +21,6 @@ body {
     background-color: var(--bg-color);
     font-family: var(--p-font);
 }
-main {
-    position: relative;
-}
 /* header css  */
 header {
     background-color: var(--dark-color);
@@ -47,6 +44,7 @@ header {
 .navbar a:hover {
     color: var(--hover-color);
     text-shadow: 0px 4px 4px var(--hover-color);
+    transition: all .3s ease-in;
 }
 .icons {
     font-size: 4em;
@@ -60,66 +58,63 @@ header {
 	display: none;
 }
 /* sektion */
-main h1 {
-    font-family: var(--big-font);
-    text-align: center;
-    padding-top: 2em;
+main {
+    height: auto;
 }
-.totop-sem{
-    position: fixed;
-    bottom: .5em;
-    right: 0;
-    font-size: 30px;
-    color: var(--bg-color);
-    background-color: rgb(7,23,34,0.5);
-    height: 1.4em;
-    padding: .2em;
-    }
-.days {
+main h1 {
     font-family: var(--big-font);
     font-size: 25px;
     padding: .6em 0;
-    margin: 5em 0 1em 0;
+    margin: 1em 0 1em 0;
     text-align: center ;
     box-shadow: 0px 0px 10px var(--dark-color);
-} 
-.fredag, .lördag, .söndag {
+}
+.form-container {
+    width: 50%;
+    margin-top: 4.5em;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 3em;
-    margin-top: .5em;
-}
-.column-sem {
-    width: min-content;
+    justify-content: center;
     background-color: #e9eef9;
-    padding: 4em;
+    padding: 2em;
     box-shadow: 0px 3px 10px var(--dark-color);
     border-radius: .5em;
 }
-.column-sem img {
-    width: 15vw;
-    min-width: 10em;
-    border-radius: 0.5em;
-    
+.form-container * {
+    margin: .5em;
+    padding: .8em;
+    font-size: 15px;
+    border-radius: .4em;
+    border: 1px solid rgba(7,23,34, .6);
+    outline: none;
 }
-.column-sem p, .column-sem h3 {
-    width: 15vw;
+#name, #email {
+    width: calc(50% - 1.5em);
 }
-.column-sem h3 {
-    font-size: 25px;
+#number, #meddelande {
+    width: calc(100% - 2em);
 }
-.column-sem h4 {
-    font-size: 22px;
+#meddelande {
+    resize: none;
+    height: 10em;
 }
-.column-sem p {
-    font-size: 20px;
-    margin-top: .2em;
+button {
+    width: 9em;
+    cursor: pointer;
+    box-shadow: 0 1px 3px var(--dark-color);
+    transition: all .3s ease-in;    
 }
-.column-sem * {
-    text-align: center;
+button:hover {
+    box-shadow: none;
 }
-
+input:valid, select:valid {
+    border-right: 3px solid rgb(175, 214, 175);
+}
+input:invalid, select:invalid {
+    border-right: 3px solid rgb(249, 169, 169);
+}
 /* footer */
 footer {
     background-color: var(--dark-color);
@@ -151,6 +146,7 @@ footer {
     border: 2px solid rgb(144, 153, 167);
     color: rgb(144, 153, 167);
     text-shadow: none;
+    transition: all .3s ease-in;
 }
 .footer-section a, .follow a {
     color: rgb(144, 153, 167);
@@ -173,51 +169,35 @@ footer {
 .follow a {
     margin: .5em;
 }
+
 /* media queries */
-@media (max-width: 1640px) {
-    .lördag .column-sem {
-        width: 35em;
-    }
-    .center {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .center p, .center h3 {
-        width: fit-content;
-    }
-}
-@media (max-width: 1583px) {
-    .column-sem h3 {
-        font-size: 20px;
-    }
-    .column-sem h4 {
-        font-size: 19px;
-    }
-    .column-sem p {
-        font-size: 18px;
-    }
-}
-@media (max-width: 1281px) {
-    .lördag .column-sem {
-        width: 25em;
+@media (max-width: 1324px) {
+    .form-container {
+        width: 60%;
     }
 }
 @media (max-width: 1048px) {
-    /* sektion */
-    .fredag .column-sem, .lördag .column-sem ,.söndag .column-sem {
-        width: 25em;
+    .info-container h1, .info-text {
+        max-width: 70%;
     }
-    .column-sem {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .totop {
+        bottom: .5em;
     }
-    .column-sem p, .column-sem h3 {
-        width: fit-content;
+    .form-container {
+        width: 70%;
     }
 }
 @media (max-width: 850px) {
+    .row-section {
+        gap: 1.5em;
+    }
+    .form-container {
+        flex-direction: column;
+        width: 90%;
+    }
+    .form-container #name, .form-container #email, .form-container .anmälan, .form-container .mat{
+        width: calc(100% - 2em);
+    }
 }
 @media (max-width: 768px) {
     /* header */
@@ -261,25 +241,17 @@ footer {
         color: #efefef;
         font-weight: 500;
     }
+   /* section */
+   .info-container h1, .info-text {
+    max-width: 100%;
+    margin: 0 1em;
+    }
+    .section-img {
+        width: 100%;
+    }
+   
 }   
 @media (max-width: 541px) {
-    /* sektion */
-    .fredag .column-sem, .lördag .column-sem ,.söndag .column-sem {
-        width: 21em;
-    }
-    .column-sem h3 {
-        font-size: 16px;
-        text-align: center;
-        }
-    .column-sem h4 {
-        font-size: 16px;
-        text-align: center;
-        }
-    .column-sem p {
-        font-size: 15px;
-        text-align: center;
-        }
-    /* footer */
     .flex {
         display: block;
     }
@@ -303,13 +275,4 @@ footer {
     .icons {
         font-size: 3em;
     }
-       /* sektion */
-  .fredag .column-sem, .lördag .column-sem ,.söndag .column-sem {
-    width: 18em;
-  }
-}
-@media (max-width: 290px) {
-    .fredag .column-sem, .lördag .column-sem ,.söndag .column-sem {
-        width: 15em;
-      }
 }
