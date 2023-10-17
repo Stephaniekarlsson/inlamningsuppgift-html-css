@@ -19,7 +19,7 @@
         </label>
 
         <a href="index.html">
-            <img class="logo" src="bilder/logo-white-new.png" alt="better webbs logga" width="170" a href="index.html">
+            <img class="logo" src="bilder/logo-white-new.png" alt="better webbs logga" width="170">
         </a>
         
         <nav class="navbar">
@@ -34,24 +34,17 @@
         <h1>Anmäl dig här!</h1>
         <form class="form-container">
             <input type="text" id="name" placeholder=" För & efternamn" required>
-            <input type="email" id="email" placeholder="Emailadress" required>
+            <input type="email" id="email" placeholder="Email adress" required>
             <input type="text" id="adress" placeholder=" Fullständig adress" required>
-
+ 
             <select name="anmälan" class="anmälan" required>
-                <option value="" disabled selected>Helgpass</option>
-                <option value="All">Alla dagar</option>
-                <option value="none">Inget helgpass</option>
+                <option value="" disabled selected>Välj pass</option>
+                <option value="All">Helgpass</option>
+                <option value="daypass">Dagspass</option>
             </select>
-
-            <select name="anmälan" class="anmälan">
-                <option value="" disabled selected>Dagspass</option>
-                <option value="friday">Fredag</option>
-                <option value="saturday">Lördag</option>
-                <option value="sunday">Söndag</option>
-            </select>
-
-            <select name="anmälan" class="anmälan">
-                <option value="" disabled selected>Dagspass</option>
+           
+            <select name="anmälan" class="anmälan multiple" multiple>
+                <option value="" disabled selected>Dagspass - välj dagar
                 <option value="friday">Fredag</option>
                 <option value="saturday">Lördag</option>
                 <option value="sunday">Söndag</option>

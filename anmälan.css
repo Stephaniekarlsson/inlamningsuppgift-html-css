@@ -101,7 +101,12 @@ main h1 {
     width: calc(100% - 2em);
 }
 .anmälan, .mat {
-    width: calc(50% - 1.5em);
+    width: calc(100% - 2em);
+}
+.multiple :nth-child(1) {
+    background-color: var(--bg-color);
+    border: none;
+    padding: 0;
 }
 #allergy {
     resize: none;
