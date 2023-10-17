@@ -105,6 +105,7 @@ button {
     cursor: pointer;
     box-shadow: 0 1px 3px var(--dark-color);
     transition: all .3s ease-in;    
+    background-color: var(--bg-color);
 }
 button:hover {
     box-shadow: none;
