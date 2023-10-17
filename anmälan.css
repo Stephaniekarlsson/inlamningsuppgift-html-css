@@ -123,7 +123,7 @@ button {
 button:hover {
     box-shadow: none;
 }
-input:valid, select:valid {
+input:valid, select .req:valid {
     border-right: 3px solid rgb(175, 214, 175);
 }
 input:invalid, select:invalid {
@@ -143,8 +143,6 @@ footer {
 .flex {
     display: flex;
     justify-content: space-evenly;
-    /* flex-wrap: wrap; */
-    
 }
 .footer-section h4 {
     font-family: var(--rubrik-font);
