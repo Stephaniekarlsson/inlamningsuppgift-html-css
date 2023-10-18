@@ -133,6 +133,15 @@ select option {
     background-color: var(--bg-color);
     color: var(--dark-color);
 }
+.multiple {
+    margin-bottom: 0;
+}
+.form-container p {
+    border: none;
+    margin-top: 0;
+    font-size: 13px;
+    opacity: .8;
+}
 /* footer */
 footer {
     background-color: var(--dark-color);
@@ -290,6 +299,12 @@ footer {
 
     .icons {
         font-size: 3em;
+    }
+    .form-container p {
+        display: none;
+    }
+    .multiple {
+        margin-bottom: .5em;
     }
 }
 
